@@ -73,7 +73,7 @@ jobs:
         registry: registry.heroku.com
         username: ${{ secrets.HEROKU_EMAIL }}
         password: ${{ secrets.HEROKU_API_KEY }}
-    - name: Criação e envio da imagem
+    - name: enviarimagemheroku
       uses: docker/build-push-action@v3
       with:
         push: true
